@@ -5,10 +5,54 @@
     [
         { "command": { "action": "copy", "singleLine": false } },
         { "command": "paste" },
-        { "command": { "action": "scrollDown" }, "keys": "ctrl+shift+down" },
-        { "command": { "action": "resizePane", "direction": "left" }, "keys": "ctrl+alt+left" },
+
+        { "command": "toggleFocusMode", "keys": "shift+f11" },
+
         { "command": "find", "keys": "ctrl+shift+f" },
+        { "command": "tabSearch", "keys": "ctrl+alt+/" },
+        { "command": "restoreLastClosed", "keys": "ctrl+alt+t" },
+
+        { "command": { "action": "scrollUp" }, "keys": "ctrl+shift+up" },
+        { "command": { "action": "scrollDown" }, "keys": "ctrl+shift+down" },
+
         { "command": "scrollUpPage", "keys": "ctrl+shift+pgup" },
+        { "command": "scrollDownPage", "keys": "ctrl+shift+pgdn" },
+
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+left" },
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+down" },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+up" },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+right" },
+
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+H" },
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+J" },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+K" },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+L" },
+
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": "ctrl+alt+left" },
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": "ctrl+alt+down" },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": "ctrl+alt+up" },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": "ctrl+alt+right" },
+
+        { "command": { "action": "splitPane", "split": "left", "splitMode": "duplicate" }, "keys": "alt+shift+H" },
+        { "command": { "action": "splitPane", "split": "down", "splitMode": "duplicate" }, "keys": "alt+shift+J" },
+        { "command": { "action": "splitPane", "split": "up", "splitMode": "duplicate" }, "keys": "alt+shift+K" },
+        { "command": { "action": "splitPane", "split": "right", "splitMode": "duplicate" }, "keys": "alt+shift+L" },
+
+        { "command": { "action": "splitPane", "split": "left", "splitMode": "duplicate" }, "keys": "alt+shift+left" },
+        { "command": { "action": "splitPane", "split": "down", "splitMode": "duplicate" }, "keys": "alt+shift+down" },
+        { "command": { "action": "splitPane", "split": "up", "splitMode": "duplicate" }, "keys": "alt+shift+up" },
+        { "command": { "action": "splitPane", "split": "right", "splitMode": "duplicate" }, "keys": "alt+shift+right" },
+
+        { "command": { "action": "splitPane", "split": "left" }, "keys": "ctrl+alt+shift+H" },
+        { "command": { "action": "splitPane", "split": "down" }, "keys": "ctrl+alt+shift+J" },
+        { "command": { "action": "splitPane", "split": "up" }, "keys": "ctrl+alt+shift+K" },
+        { "command": { "action": "splitPane", "split": "right" }, "keys": "ctrl+alt+shift+L" },
+
+        { "command": { "action": "splitPane", "split": "left" }, "keys": "ctrl+alt+shift+left" },
+        { "command": { "action": "splitPane", "split": "down" }, "keys": "ctrl+alt+shift+down" },
+        { "command": { "action": "splitPane", "split": "up" }, "keys": "ctrl+alt+shift+up" },
+        { "command": { "action": "splitPane", "split": "right" }, "keys": "ctrl+alt+shift+right" },
+
         { "command": "unbound", "keys": "ctrl+v" },
         { "command": "unbound", "keys": "ctrl+c" },
         { "command": "unbound", "keys": "enter" },
@@ -20,27 +64,7 @@
         { "command": "unbound", "keys": "alt+pgup" },
         { "command": "unbound", "keys": "alt+pgdn" },
         { "command": "unbound", "keys": "alt+shift+plus" },
-        { "command": "unbound", "keys": "alt+shift+minus" },
-        { "command": "toggleFocusMode", "keys": "shift+f11" },
-        { "command": { "action": "scrollUp" }, "keys": "ctrl+shift+up" },
-        { "command": "scrollDownPage", "keys": "ctrl+shift+pgdn" },
-        { "command": "restoreLastClosed", "keys": "ctrl+alt+t" },
-        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+down" },
-        { "command": "tabSearch", "keys": "ctrl+alt+/" },
-        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+up" },
-        { "command": { "action": "resizePane", "direction": "down" }, "keys": "ctrl+alt+down" },
-        { "command": { "action": "resizePane", "direction": "right" }, "keys": "ctrl+alt+right" },
-        { "command": { "action": "resizePane", "direction": "up" }, "keys": "ctrl+alt+up" },
-
-        { "command": { "action": "splitPane", "split": "down", "splitMode": "duplicate" }, "keys": "alt+shift+down" },
-        { "command": { "action": "splitPane", "split": "left", "splitMode": "duplicate" }, "keys": "alt+shift+left" },
-        { "command": { "action": "splitPane", "split": "right", "splitMode": "duplicate" }, "keys": "alt+shift+right" },
-        { "command": { "action": "splitPane", "split": "up", "splitMode": "duplicate" }, "keys": "alt+shift+up" },
-
-        { "command": { "action": "splitPane", "split": "down" }, "keys": "ctrl+alt+shift+down" },
-        { "command": { "action": "splitPane", "split": "left" }, "keys": "ctrl+alt+shift+left" },
-        { "command": { "action": "splitPane", "split": "right" }, "keys": "ctrl+alt+shift+right" },
-        { "command": { "action": "splitPane", "split": "up" }, "keys": "ctrl+alt+shift+up" }
+        { "command": "unbound", "keys": "alt+shift+minus" }
     ],
     "confirmCloseAllTabs": true,
     "copyFormatting": "none",
@@ -63,11 +87,7 @@
             "colorScheme": "My Scheme",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
-            "font":
-            {
-                "face": "DejaVu Sans Mono",
-                "size": 9.0
-            },
+            "font": { "face": "DejaVu Sans Mono", "size": 9.0 },
             "historySize": 10000,
             "padding": "2"
         },
@@ -114,6 +134,7 @@
     "schemes":
     [
         {
+            "name": "Campbell",
             "background": "#0C0C0C",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -129,7 +150,6 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
-            "name": "Campbell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -137,6 +157,7 @@
             "yellow": "#C19C00"
         },
         {
+            "name": "Campbell Powershell",
             "background": "#012456",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -152,7 +173,6 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
-            "name": "Campbell Powershell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -160,6 +180,7 @@
             "yellow": "#C19C00"
         },
         {
+            "name": "My Scheme",
             "background": "#000000",
             "black": "#000000",
             "blue": "#3465A4",
@@ -175,7 +196,6 @@
             "cyan": "#06989A",
             "foreground": "#DADADA",
             "green": "#4E9A06",
-            "name": "My Scheme",
             "purple": "#75507B",
             "red": "#D80000",
             "selectionBackground": "#FFFFFF",
@@ -183,29 +203,7 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#000000",
-            "black": "#000000",
-            "blue": "#3465A4",
-            "brightBlack": "#555753",
-            "brightBlue": "#729FCF",
-            "brightCyan": "#34E2E2",
-            "brightGreen": "#8AE234",
-            "brightPurple": "#AD7FA8",
-            "brightRed": "#EF2929",
-            "brightWhite": "#EEEEEC",
-            "brightYellow": "#FCE94F",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#06989A",
-            "foreground": "#D3D7CF",
-            "green": "#4E9A06",
-            "name": "My Scheme 1",
-            "purple": "#75507B",
-            "red": "#B30000",
-            "selectionBackground": "#FFFFFF",
-            "white": "#D3D7CF",
-            "yellow": "#C4A000"
-        },
-        {
+            "name": "One Half Dark",
             "background": "#282C34",
             "black": "#282C34",
             "blue": "#61AFEF",
@@ -221,7 +219,6 @@
             "cyan": "#56B6C2",
             "foreground": "#DCDFE4",
             "green": "#98C379",
-            "name": "One Half Dark",
             "purple": "#C678DD",
             "red": "#E06C75",
             "selectionBackground": "#FFFFFF",
@@ -229,6 +226,7 @@
             "yellow": "#E5C07B"
         },
         {
+            "name": "One Half Light",
             "background": "#FAFAFA",
             "black": "#383A42",
             "blue": "#0184BC",
@@ -244,7 +242,6 @@
             "cyan": "#0997B3",
             "foreground": "#383A42",
             "green": "#50A14F",
-            "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
             "selectionBackground": "#FFFFFF",
@@ -252,6 +249,7 @@
             "yellow": "#C18301"
         },
         {
+            "name": "Solarized Dark",
             "background": "#002B36",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -267,7 +265,6 @@
             "cyan": "#2AA198",
             "foreground": "#839496",
             "green": "#859900",
-            "name": "Solarized Dark",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -275,6 +272,7 @@
             "yellow": "#B58900"
         },
         {
+            "name": "Solarized Light",
             "background": "#FDF6E3",
             "black": "#002B36",
             "blue": "#268BD2",
@@ -290,7 +288,6 @@
             "cyan": "#2AA198",
             "foreground": "#657B83",
             "green": "#859900",
-            "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
             "selectionBackground": "#FFFFFF",
@@ -298,6 +295,7 @@
             "yellow": "#B58900"
         },
         {
+            "name": "Tango Dark",
             "background": "#000000",
             "black": "#000000",
             "blue": "#3465A4",
@@ -313,7 +311,6 @@
             "cyan": "#06989A",
             "foreground": "#D3D7CF",
             "green": "#4E9A06",
-            "name": "Tango Dark",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -321,6 +318,7 @@
             "yellow": "#C4A000"
         },
         {
+            "name": "Tango Light",
             "background": "#FFFFFF",
             "black": "#000000",
             "blue": "#3465A4",
@@ -336,7 +334,6 @@
             "cyan": "#06989A",
             "foreground": "#555753",
             "green": "#4E9A06",
-            "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#FFFFFF",
@@ -344,6 +341,7 @@
             "yellow": "#C4A000"
         },
         {
+            "name": "Vintage",
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -359,7 +357,6 @@
             "cyan": "#008080",
             "foreground": "#C0C0C0",
             "green": "#008000",
-            "name": "Vintage",
             "purple": "#800080",
             "red": "#800000",
             "selectionBackground": "#FFFFFF",
